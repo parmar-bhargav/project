@@ -1,0 +1,214 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+}
+html 
+{
+  height: 100%;
+}
+body 
+{
+  background-color: white;
+}
+
+/* heade file css */
+
+.a 
+{
+  height: 70px;
+  width: 200px;
+  margin-top: 0px;
+  margin-left: 80px;
+}
+.header 
+{
+  display: flex;
+  position: fixed;
+  top: 0px;
+  padding: 13px;
+  width: 100%;
+  box-shadow: 0px 0px 5px grey;
+  background-color: white;
+}
+
+/* link class */
+
+.link 
+{
+  margin-left: 250px;
+  margin-top: 30px;
+  display: flex;
+}
+.links 
+{
+  margin-left: 30px;
+  text-decoration: none;
+  color: gray;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.links:hover 
+{
+  color: black;
+}
+.pipe 
+{
+  margin-top: 0px;
+}
+.cart1
+{
+  height: 30px;
+  width: 30px;
+  margin-left: 30px;
+  margin-top: -6px;
+}
+.btn 
+{
+  margin-top: -6px;
+  padding: 8px 23px;
+  font-size: 13px;
+  font-weight: bolder;
+  border-radius: 54px;
+  margin-left: 110px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(114, 231, 78);
+}
+.btn:hover 
+{
+  background-color: rgb(72, 184, 39);
+}
+
+/* main file css */
+
+.main 
+{
+  margin-top: 100px;
+}
+.a1 
+{
+  margin-top: 40px;
+  width: 1100px;
+}
+h3 
+{
+  margin-top: -120px;
+  color: white;
+  text-decoration: underline;
+}
+h4
+{
+  color: white;
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+
+.search 
+{
+  padding: 13px 18px;
+  width: 800px;
+  border: none;
+  border-radius: 29px;
+  margin-top: 15px;
+  margin-left: 277px;
+}
+.search-btn 
+{
+  padding: 14px 20px 13px;
+  border-radius: 29px;
+  font-size: 12px;
+  font-weight: bolder;
+  margin-left: -14px;
+  border: none;
+  background: pink;
+  cursor: pointer;
+}
+.search-btn:hover
+{
+    background-color: hotpink;
+    color:white;
+}
+
+/* how it wotk css */
+
+.work
+{
+  font-family: candara;
+  margin-top: 75px;
+  
+}
+.wr
+{
+  color:lightgreen;
+}
+.f1
+{
+  margin-top:25px;
+}
+/*=============== fav-food=============*/
+.fav-food
+{
+  margin-top:70px;
+  margin-left:170px;
+}
+.fav-food-img
+{
+  height:60px;
+  width: 86px;
+  margin-left:75px;
+}
+.f1
+{
+  margin-left:40px;
+}
+.fav-food-wr
+{
+  margin-top: 25px;
+}
+/*=================deliver================*/
+.food-deli
+{
+  margin-top:-229px;
+  margin-left:585px;
+}
+.deliver-img
+{
+  margin-left: 30px;
+}
+.deliver-wr
+{
+  margin-top: 25px;
+}
+
+/*================== eat&enjoy =================*/
+
+.eat_enjoy
+{
+  margin-top: -200px;
+  margin-left: 990px;
+}
+.eat-image
+{
+  height:55px;
+  width:70px;
+  margin-left:50px;
+}
+.eat-enjoy
+{
+  margin-top: 25px; 
+}
+
+/*=========== our menu view css ====================*/
+.our_menu
+{
+  margin-top:100px;
+}
+.m1
+{
+  font-size: 40px;
+}
+marquee
+{
+  margin-top:50px;
+}

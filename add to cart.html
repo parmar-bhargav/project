@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-108" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="add to cart.css" />
+    <link rel="stylesheet" type="text/css" href="welcome.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="img">
+        <img src="logo.jpg" alt="photo" class="a" />
+      </div>
+      <div class="link">
+        <a href="welcome.html" class="links">Home</a> <p class="links pipe">|</p>
+        <a href="menu.html" class="links">Menu</a> <p class="links pipe">|</p>
+        <a href="contacts.html" class="links">Contact us</a> <p class="links pipe">|</p>
+        <a href="about us.html" class="links">About us</a> <p class="links pipe">|</p>
+        <a href="add to cart.html"><img src="cart.png" class="cart1"/></a>
+        <a href="login form.html"><input type="submit" class="btn" value="LOGOUT"/></a>
+      </div>
+    </div>
+
+    <div id="burgers">
+      <!---------------- burger ------------------>
+      <div class="items-div" id="items-div-1">
+        <div id="items1"></div>
+        <div>
+          <button class="rmv-btn" id="rmv1" style="display: none" onclick="remove1()">Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-2">
+        <div id="items2"></div>
+        <div>
+          <button class="rmv-btn" id="rmv2" style="display: none" onclick="remove2()"> Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-3">
+        <div id="items3"></div>
+        <div>
+          <button class="rmv-btn" id="rmv3" style="display: none" onclick="remove3()"> Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-4">
+        <div id="items4"></div>
+        <div>
+          <button class="rmv-btn" id="rmv4" style="display: none" onclick="remove4()"> Remove </button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-5">
+        <div id="items5"></div>
+        <div>
+          <button class="rmv-btn" id="rmv5" style="display: none" onclick="remove5()"> Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-6">
+        <div id="items6"></div>
+        <div>
+          <button class="rmv-btn" id="rmv6" style="display: none" onclick="remove6()">Remove</button>
+        </div>
+      </div>
+
+      <!------------ pizza ------------------->
+      <div class="items-div" id="items-div-7">
+        <div id="items7"></div>
+        <div>
+          <button class="rmv-btn" id="rmv7" style="display: none" onclick="remove7()" > Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-8">
+        <div id="items8"></div>
+        <div>
+          <button class="rmv-btn" id="rmv8" style="display: none" onclick="remove8()"> Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-9">
+        <div id="items9"></div>
+        <div>
+          <button class="rmv-btn" id="rmv9" style="display: none" onclick="remove9()">Remove </button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-10">
+        <div id="items10"></div>
+        <div>
+          <button class="rmv-btn" id="rmv10" style="display: none" onclick="remove10()">Remove </button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-11">
+        <div id="items11"></div>
+        <div>
+          <button class="rmv-btn" id="rmv11" style="display: none" onclick="remove11()" > Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-12">
+        <div id="items12"></div>
+        <div>
+          <button class="rmv-btn" id="rmv12" style="display: none" onclick="remove12()"> Remove </button>
+        </div>
+      </div>
+
+      <!--------------- pasta --------------------->
+      <div class="items-div" id="items-div-13">
+        <div id="items13"></div>
+        <div>
+          <button class="rmv-btn" id="rmv13" style="display: none" onclick="remove13()" > Remove </button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-14">
+        <div id="items14"></div>
+        <div>
+          <button class="rmv-btn" id="rmv14" style="display: none" onclick="remove14()"> Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-15">
+        <div id="items15"></div>
+        <div>
+          <button class="rmv-btn" id="rmv15" style="display: none" onclick="remove15()" >Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-16">
+        <div id="items16"></div>
+        <div>
+          <button class="rmv-btn"  id="rmv16" style="display: none" onclick="remove16()" > Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-17">
+        <div id="items17"></div>
+        <div>
+          <button class="rmv-btn" id="rmv17"style="display: none"onclick="remove17()" > Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-18">
+        <div id="items18"></div>
+        <div>
+          <button class="rmv-btn"  id="rmv18" style="display: none" onclick="remove18()"> Remove</button>
+        </div>
+      </div>
+
+      <!------------- sandwich --------------->
+      <div class="items-div" id="items-div-19">
+        <div id="items19"></div>
+        <div>
+          <button class="rmv-btn" id="rmv19" style="display: none"onclick="remove19()"> Remove </button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-20">
+        <div id="items20"></div>
+        <div>
+          <button class="rmv-btn" id="rmv20" style="display: none" onclick="remove20()" > Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-21">
+        <div id="items21"></div>
+        <div>
+          <button class="rmv-btn"  id="rmv21" style="display: none" onclick="remove21()" > Remove </button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-22">
+        <div id="items22"></div>
+        <div>
+          <button class="rmv-btn" id="rmv22" style="display: none" onclick="remove22()">  Remove </button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-23">
+        <div id="items23"></div>
+        <div>
+          <button class="rmv-btn" id="rmv23" style="display: none" onclick="remove23()"> Remove</button>
+        </div>
+      </div>
+      <div class="items-div" id="items-div-24">
+        <div id="items24"></div>
+        <div>
+          <button class="rmv-btn" id="rmv24" style="display: none" onclick="remove24()" > Remove </button>
+        </div>
+      </div>
+
+      <!----------------- sub ---------------->
+      <div class="items-div" id="items-div-25">
+        <div id="items25"></div>
+        <div>
+          <button class="rmv-btn"id="rmv25" style="display: none"onclick="remove25()"> Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-26">
+        <div id="items26"></div>
+        <div>
+          <button class="rmv-btn" id="rmv26" style="display: none" onclick="remove26()"> Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-27">
+        <div id="items27"></div>
+        <div>
+          <button class="rmv-btn"  id="rmv27" style="display: none" onclick="remove27()" > Remove </button>
+        </div>
+      </div>
+
+      <!------------ ice-cream ------------------>
+      <div class="items-div" id="items-div-28">
+        <div id="items28"></div>
+        <div>
+          <button class="rmv-btn" id="rmv28" style="display: none"onclick="remove28()"> Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-29">
+        <div id="items29"></div>
+        <div>
+          <button class="rmv-btn" id="rmv29" style="display: none" onclick="remove29()"> Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-30">
+        <div id="items30"></div>
+        <div>
+          <button class="rmv-btn" id="rmv30" style="display: none" onclick="remove30()"> Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-31">
+        <div id="items31"></div>
+        <div>
+          <button class="rmv-btn" id="rmv31" style="display: none" onclick="remove31()">Remove</button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-32">
+        <div id="items32"></div>
+        <div>
+          <button class="rmv-btn" id="rmv32" style="display: none" onclick="remove32()"> Remove </button>
+        </div>
+      </div>
+
+      <div class="items-div" id="items-div-33">
+        <div id="items33"></div>
+        <div>
+          <button class="rmv-btn" id="rmv33"style="display: none" onclick="remove33()"> Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="disp"style="margin: 200px 430px; color: silver; font-size: 30px">
+      <h1>No Items Selected</h1>
+    </div>
+    <div class="total_price" id="t_price" style="display: none">
+      <div style="display: flex;justify-content: space-between;padding: 0px 120px;">
+        <div style="display: flex;margin-left:-37px">
+          <h2>Total Items :</h2>
+          <h2 id="t_items"></h2>
+        </div>
+        <div style="display: flex;">
+          <h2>Total Price :</h2>
+          <h2>&#8377;</h2>
+          <h2 id="price"></h2>
+          <div class="btn-div">
+            <button class="buy-btn" onclick="buy()">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div><br /><br /><br /><br /></div>
+  </body>
+  <script src="add_to_cart.js"></script>
+</html>

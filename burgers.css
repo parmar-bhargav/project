@@ -1,0 +1,133 @@
+*
+{
+  margin:0px;
+  padding:0px;
+}
+body
+{
+  background-color:gainsboro;
+}
+.heading
+{
+  font-size:50px;
+  font-family: candara;
+  font-style: italic;
+  display: flex;
+  margin-top:100px;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: black;
+  
+}
+hr
+{
+  background-color: white;
+}
+.mlink
+{
+  display: flex;
+  
+}
+.flinks
+{
+  margin-top: 100px;
+}
+.l1
+{
+  background:linear-gradient(aliceblue,azure);
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 30px;
+  border: 1px solid aliceblue;
+  width: 270px;
+  padding: 15px 15px 15px 20px;
+  border-radius: 10px;
+}
+.f1
+{
+  text-decoration: none;
+  margin-left: 55px;
+  color: slategray;
+}
+.f1:hover
+{
+  color: black;
+}
+
+/*  burger menu css */
+
+.bur-menu
+{
+  margin-top:60px;
+  margin-left:30px;
+  cursor: pointer;
+}
+.bur-things
+{
+  background-color: azure;
+  border-radius: 19px;
+}
+.bur
+{
+  box-sizing: content-box;
+  width:303px;
+  border:1px solid silver;
+  border-radius: 17px;
+}
+.bur:hover
+{
+  box-shadow: 2px 3px 15px;
+  border:px solid gray;
+}
+.b
+{
+  
+  border: 1px solid white;
+  border-radius: 15px;
+  height: 264px;
+  width: 301px;
+}
+.b1
+{
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.price
+{
+  font-size: 28px;
+  margin-left:200px;
+  margin-top: -28px; 
+}
+.cart
+{
+  margin: 10px;
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 54px;
+  margin-left: 50px;
+  margin-top:15px;
+  width: 200px;
+  background-color:blueviolet;
+  font-weight: bolder;
+  border: 1px solid grey;
+  color: white;
+  cursor: pointer;
+}
+.cart:hover
+{
+  background-color:rgb(83, 17, 145);
+  border: 1px solid black;
+}
+.bur-menu1
+{
+  margin-top:455px;
+  margin-left:-975px;
+  cursor: pointer;
+}
+.bur-menu2
+{
+  margin-top:455px;
+  margin-left:30px;
+  cursor: pointer;
+}

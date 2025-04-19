@@ -1,0 +1,233 @@
+<html>
+  <head>
+    <title>order food delivery</title>
+    <link rel="stylesheet" type="text/css" href="welcome.css">
+    <link rel="stylesheet" type="text/css" href="burgers.css">
+  </head>
+  <body>
+
+    <!-- Header -->
+
+    <div class="header">
+      <div class="img">
+        <img src="logo.jpg" alt="photo" class="a"> 
+      </div>
+      <div class="link">
+          <a href="welcome.html" class="links">Home</a> <p class="links pipe">|</p>
+          <a href="menu.html" class="links">Menu</a> <p class="links pipe">|</p>
+          <a href="contacts.html" class="links">Contact us</a>  <p class="links pipe">|</p>
+          <a href="about us.html"  class="links">About us</a><p class="links pipe">|</p>
+          <a href="add to cart.html"><img src="cart.png"  class="cart1"></a>
+          <a href="login form.html"><input type="submit" class="btn" value="LOGOUT"></a>
+      </div> 
+    </div>
+
+      <!------main part------->
+
+      <font class="heading" id="main">BURGERS</font>
+      <hr noshade>
+      <div class="mlink"> 
+        <div class="flinks">
+          <div class="l1">
+            <a href="burgers.html" class="f1">BURGERS</a>
+          </div>
+          <div class="l1">
+            <a href="pizza.html" class="f1">PIZZA</a>
+          </div>
+          <div class="l1">
+            <a href="pasta.html" class="f1">PASTA</a>
+          </div>
+          <div class="l1">
+            <a href="sandwich.html" class="f1">SANDWICH</a>
+          </div>
+          <div class="l1">
+            <a href="sub.html" class="f1">SUB</a>
+          </div>
+          <div class="l1">
+            <a href="ice-cream.html" class="f1">ICE-CREAM</a>
+          </div>
+        </div>
+        <!-------------------image 1------------------->
+        <div class="bur-menu">
+          <div class="bur-things">
+            <div class="bur">
+              <img src="Onion burger.jpg" alt="burger1" class="b">
+              <h2 class="b1" id="item-name-1">Onion burger</h2>
+              <div class="price" id="item-price-1">
+                <span>&#8377;<span id="price1">60</span></span>
+              </div>
+              <div class="add-to-cart">
+                <button onclick="addToCart_1()" class="cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-------------------image 2------------------->
+        <div class="bur-menu">
+          <div class="bur-things">
+            <div class="bur">
+              <img src="veggie burger.jpg" alt="burger1" class="b">
+              <h2 class="b1" id="item-name-2">veggie burger</h2>
+              <div class="price" id="item-price-2">
+                <span>&#8377;<span id="price2">50</span></span>
+              </div>
+              <div class="add-to-cart">
+                <button onclick="addToCart_2()" class="cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-------------------image 3------------------->
+        <div class="bur-menu">
+          <div class="bur-things">
+            <div class="bur">
+              <img src="Cheese Burger.jpg" alt="burger1" class="b">
+              <h2 class="b1" id="item-name-3">Cheese Burger</h2>
+              <div class="price" id="item-price-3">
+                <span>&nbsp;&#8377;<span id="price3">80</span></span>
+              </div>
+              <div class="add-to-cart">
+                <button onclick="addToCart_3()" class="cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-------------------image 4------------------->
+         <div class="bur-menu1">
+          <div class="bur-things">
+            <div class="bur">
+              <img src="Bean Burger.jpg" alt="burger1" class="b">
+              <h2 class="b1" id="item-name-4">Bean Burger</h2>
+              <div class="price" id="item-price-4">
+                <span>&#8377;<span id="price4">100</span></span>
+              </div>
+              <div class="add-to-cart">
+                <button onclick="addToCart_4()" class="cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-------------------image 5------------------->
+        <div class="bur-menu2">
+          <div class="bur-things">
+            <div class="bur">
+              <img src="Beef Burger.jpg" alt="burger1" class="b">
+              <h2 class="b1" id="item-name-5">Beef Burger</h2>
+              <div class="price" id="item-price-5">
+                <span>&#8377;<span id="price5">120</span></span>
+              </div>
+              <div class="add-to-cart">
+                <button onclick="addToCart_5()" class="cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-------------------image 6------------------->
+         <div class="bur-menu2">
+          <div class="bur-things">
+            <div class="bur">
+              <img src="Turkey Burger.jpg" alt="burger1" class="b">
+              <h2 class="b1" id="item-name-6">Turkey Burger</h2>
+              <div class="price" id="item-price-6">
+                <span>&nbsp;&nbsp;&#8377;<span id="price6">100</span></span>
+              </div>
+              <div class="add-to-cart">
+                <button onclick="addToCart_6()" class="cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </body>
+  <!----------- javascript------------->
+  <script>
+    var qnt1=0;
+    var qnt2=0;
+    var qnt3=0;
+    var qnt4=0;
+    var qnt5=0;
+    var qnt6=0;
+    function addToCart_1()
+      {
+        // Get the item information from the form
+        let itemName = document.getElementById("item-name-1").innerHTML;
+        let price = document.getElementById("price1").innerText;
+        let itemPrice = document.getElementById("item-price-1").innerHTML;
+        localStorage.setItem("iname-1",itemName);
+        localStorage.setItem("iprice-1",itemPrice);
+        localStorage.setItem("price1",price);
+        qnt1++;
+        localStorage.setItem("qnt1",qnt1);
+      }
+
+      function addToCart_2()
+      {
+        // Get the item information from the form
+        let itemName = document.getElementById("item-name-2").innerHTML;
+        let price = document.getElementById("price2").innerText;
+        let itemPrice = document.getElementById("item-price-2").innerHTML;
+        localStorage.setItem("iname-2",itemName);
+        localStorage.setItem("iprice-2",itemPrice);
+        localStorage.setItem("price2",price);
+        qnt2++;
+        localStorage.setItem("qnt2",qnt2);
+      
+      }
+      function addToCart_3()
+      {
+        // Get the item information from the form
+        let itemName = document.getElementById("item-name-3").innerHTML;
+        let price = document.getElementById("price3").innerText;
+        let itemPrice = document.getElementById("item-price-3").innerHTML;
+        localStorage.setItem("iname-3",itemName);
+        localStorage.setItem("iprice-3",itemPrice);
+        localStorage.setItem("price3",price);
+        qnt3++;
+        localStorage.setItem("qnt3",qnt3);
+      
+      }
+      function addToCart_4()
+      {
+        // Get the item information from the form
+        let itemName = document.getElementById("item-name-4").innerHTML;
+        let price = document.getElementById("price4").innerText;
+        let itemPrice = document.getElementById("item-price-4").innerHTML;
+        localStorage.setItem("iname-4",itemName);
+        localStorage.setItem("iprice-4",itemPrice);
+        localStorage.setItem("price4",price);
+        qnt4++;
+        localStorage.setItem("qnt4",qnt4);
+      
+      }
+      function addToCart_5()
+      {
+        // Get the item information from the form
+        let itemName = document.getElementById("item-name-5").innerHTML;
+        let price = document.getElementById("price5").innerText;
+        let itemPrice = document.getElementById("item-price-5").innerHTML;
+        localStorage.setItem("iname-5",itemName);
+        localStorage.setItem("iprice-5",itemPrice);
+        localStorage.setItem("price5",price);
+        qnt5++;
+        localStorage.setItem("qnt5",qnt5);
+      
+      }
+      function addToCart_6()
+      {
+        // Get the item information from the form
+        let itemName = document.getElementById("item-name-6").innerHTML;
+        let price = document.getElementById("price6").innerText;
+        let itemPrice = document.getElementById("item-price-6").innerHTML;
+        localStorage.setItem("iname-6",itemName);
+        localStorage.setItem("iprice-6",itemPrice);
+        localStorage.setItem("price6",price);
+        qnt6++;
+        localStorage.setItem("qnt6",qnt6);
+      }
+  </script>
+</html>
